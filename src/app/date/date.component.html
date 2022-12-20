@@ -1,7 +1,29 @@
 <div>
   <h3>
     <p>{{message}}</p>
+    <div>
+      <p *ngFor="let item of items, let i = index">{{i + 1}} {{item}}</p>
+    </div>
+
+    <div *ngIf="loggedIn; then thenBlock else elseBlock">
+
+    </div>
+    <ng-template #thenBlock>
+      logged In
+    </ng-template>
+    <ng-template #elseBlock>
+      <div >
+        logged Out
+      </div>
+    </ng-template>
+
   </h3>
+  <button (click)="someFunc()">change status</button>
+  <button *ngIf="isCollapsed" (click)="toggleIsCollapsed()">Show</button>
+  <button *ngIf="!isCollapsed" (click)="toggleIsCollapsed()">Hide</button>
+  <div *ngIf="!isCollapsed">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur est consequuntur placeat ad labore officiis autem quo fugit voluptatem vitae ipsam voluptate, alias omnis debitis unde eum? Facilis, eum sed.</p>
+  </div>
 </div>
 
 

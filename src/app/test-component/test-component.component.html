@@ -1,0 +1,13 @@
+<p>////////</p>
+<input type="text" [(ngModel)]="text">
+<p>{{text}}</p>
+////////
+<div [ngClass]="{visibility:visibility}">
+  <h1 [ngClass]="{class1:true}"> Styles</h1>
+  <h2 [class.titleStyle]="true">Class</h2>
+  <h3 [ngStyle]="{'color':'grey'}">ngStyleExample</h3>
+  <p [ngClass]="{class2:true}">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, reprehenderit.
+  </p>
+</div>
+<button (click)="showBlock()">toggle</button>
