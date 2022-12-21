@@ -13,6 +13,9 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { NewsComponent } from './news/news.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { HeaderComponent } from './header/header.component';
+import { MainComponent } from './main/main.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   {path:'',component:HomeComponent},
@@ -32,7 +35,10 @@ const appRoutes: Routes = [
     HomeComponent,
     AboutComponent,
     NewsComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HeaderComponent,
+    MainComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
