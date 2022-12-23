@@ -6,20 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./date.component.scss']
 })
 export class DateComponent implements OnInit {
-message:string = '';
-items:Array<string>=['React','Redux','Redux-toolkit','Angular'];
-loggedIn:boolean= true;
-isCollapsed:boolean=true;
-constructor(){
-  setInterval(()=>{
-    this.message = new Date().toLocaleTimeString();
-  })
-}
-someFunc(){
-this.loggedIn = !this.loggedIn
-}
-toggleIsCollapsed(){
-  this.isCollapsed = !this.isCollapsed
-}
-ngOnInit(){}
+  message: string = '';
+  items: Array<string> = ['React', 'Redux', 'Redux-toolkit', 'Angular'];
+  loggedIn: boolean = true;
+  isCollapsed: boolean = true;
+  constructor() {
+    setInterval(() => {
+      this.message = new Date().toLocaleTimeString();
+    })
+  }
+  someFunc() {
+    this.loggedIn = !this.loggedIn
+  }
+  toggleIsCollapsed() {
+    this.isCollapsed = !this.isCollapsed
+  }
+  ngOnInit() { }
 }

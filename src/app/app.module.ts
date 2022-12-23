@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { Routes,RouterModule } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,12 +18,12 @@ import { MainComponent } from './main/main.component';
 import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
-  {path:'',component:HomeComponent},
-  {path:'about',component:AboutComponent},
-  {path:'news',component:NewsComponent},
-  {path:'date',component:DateComponent},
-  {path:'test',component:TestComponentComponent},
-  {path:'**',component:NotFoundComponent},
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'news', component: NewsComponent },
+  { path: 'date', component: DateComponent },
+  { path: 'test', component: TestComponentComponent },
+  { path: '**', component: NotFoundComponent },
 ]
 
 @NgModule({

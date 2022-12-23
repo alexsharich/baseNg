@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./new-component.component.scss']
 })
 export class NewComponentComponent {
-testText='19.12.2022'
+  testText = '19.12.2022'
 }
